@@ -6,22 +6,18 @@
     perspective: 1000px;
 }
 
-/*
-.carta-box:hover .carta {
-    transform: rotateY(180deg);
-}
-*/
 .carta {
     transform-style: preserve-3d;
+    will-change: transform;
     transition: all 0.5s linear;
+    transition-timing-function: ease-in-out;
 }
 
-.cara {
+.back, .front {
     position: absolute;
     backface-visibility: hidden;
 }
-/*
-.cara.detras {  
+
+.back {  
     transform: rotateY(180deg); 
 }
-*/
